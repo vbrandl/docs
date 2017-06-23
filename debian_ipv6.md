@@ -23,5 +23,10 @@ gateway <ipv6-gateway>
 
 ## `/etc/rc.local`
 
+Since the hooks in `/etc/network/interfaces` don't work, the interface is brought up using a boot hook.
+
 ```
+/sbin/ip -6 addr add <ipv6-address>/64 dev eth0
+/sbin/ip -f inet6 route add <ipv6-gateway> dev eth0
+/sbin/route -A inet6 add default gw <ipv6-gateway> dev eth0
 ```
