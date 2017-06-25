@@ -2,6 +2,8 @@
 
 ## Steps
 
+_Don't use tinc or any other VPN to connect to your server when doing a system upgrade._
+
 1. Create backup (`/etc`, `/home`, `/root`, `/var/lib/mysql`, mysqldump, ...)
 2. Update sources in `/etc/apt/sources.list` and `/etc/apt/sources.list.d/` to stretch
 3. `apt update`
