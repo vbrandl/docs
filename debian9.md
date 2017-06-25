@@ -43,5 +43,7 @@ ignore = 127.0.0.1/8 10.0.0.1/8
 
 ### dnscrypt
 
+Needs to be purged and reinstalled: `apt purge dnscrypt-proxy && apt install dnscrypt-proxy`
+
 Switch from init.d script to systemd. Systemd script can be obtained from the [Arch
 Wiki](https://wiki.archlinux.org/index.php/DNSCrypt)
