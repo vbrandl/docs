@@ -38,3 +38,8 @@ ignore = 127.0.0.1/8 10.0.0.1/8
 /sbin/ip -f inet6 route add <ipv6-gateway> dev eth0		# this one is new
 /sbin/route -A inet6 add default gw <ipv6-gateway> dev eth0
 ```
+
+### dnscrypt
+
+Switch from init.d script to systemd. Systemd script can be obtained from the [Arch
+Wiki](https://wiki.archlinux.org/index.php/DNSCrypt)
